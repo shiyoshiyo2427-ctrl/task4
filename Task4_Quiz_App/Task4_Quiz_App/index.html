@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Question Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="quiz-card">
+    <h1>JavaScript Quiz</h1>
+    <p id="progress" class="progress" aria-live="polite">Question 1 of 3</p>
+    <section id="quiz" aria-live="polite">
+      <h2 id="question">Loading question...</h2>
+      <div id="answers" class="answers"></div>
+      <p id="feedback" role="status"></p>
+      <button id="next-btn" class="next-btn" type="button" hidden>Next question</button>
+    </section>
+    <section id="result" hidden aria-live="polite">
+      <h2>Quiz complete!</h2>
+      <p id="score" class="score"></p>
+      <p>Thanks for taking the quiz.</p>
+    </section>
+  </main>
+</body>
+</html>
